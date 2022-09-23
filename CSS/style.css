@@ -1,0 +1,614 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --main-color:#1c1c1c;
+    --secondry-color:#F7F7F7;
+}
+*{
+    list-style-type: none;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+.title{
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    z-index: 0;
+    color: var(--main-color);
+}
+.title::after{
+    content: '';
+    background-image: url(../img/dots.png);
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+/*------------------  H E A D E R   S E C T I O N  -------------------------*/
+
+
+
+
+.home{
+    background-image: url(../img/bg.jpg);
+    background-position:left top;
+    background-size: cover;
+}
+.home-layer{
+    background-color: rgba(1, 1, 1, 0.6) !important;
+}
+.home a{
+    font-weight:500;
+    font-size: 14px;
+}
+.navbar{
+    padding: 20px 0 30px;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.social-icon-container{
+    width:2rem;
+    height:2rem;
+    border-radius:50%;
+    margin: 0 3px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+/* 
+.navbar-collapse{
+    background-color: white; 
+} */
+
+.navbar-collapse a{
+    /* color: rgb(0, 0, 0) !important; */
+    text-align: center;
+}
+.navbar .navbar-brand{
+    font-size: 18px;
+    font-weight:800;
+    letter-spacing: 1.5px;
+}
+.home-caption h1{
+    font-size: 55px;
+    font-weight:800;
+}
+.home-caption p{
+    font-size: 45px;
+    font-weight:400;
+}
+.home-caption span{
+    font-size: 45px;
+}
+.home-caption p::after{
+    content: ' Larry Daniels |';
+    animation-name:lettersAnimation;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes lettersAnimation{
+    0%{content: 'L|';}
+    2%{content: 'La|';}
+    4%{content: 'Lar|';}
+    8%{content: 'Larr|';}
+    10%{content: 'Larry|';}
+    12%{content: 'Larry |';}
+    14%{content: 'Larry D|';}
+    16%{content: 'Larry Da|';}
+    18%{content: 'Larry Dan';}
+    20%{content: 'Larry Dani|';}
+    22%{content: 'Larry Daniel|';}
+    24%{content: 'Larry Daniels|';}
+    26%{content: 'Larry Daniel|';}
+    28%{content: 'Larry Dani|';}
+    30%{content: 'Larry Dan|';}
+    32%{content: 'Larry Da|';}
+    33%{content: 'Larry D|';}
+    34%{content: 'Larry ';}
+    36%{content: 'Larry|';}
+    38%{content: 'Larr|';}
+    40%{content: 'Lar|';}
+    41%{content: 'La|';}
+    42%{content: 'L|';}
+    43%{content: '|';}
+    44%{content: 'D|';}
+    46%{content: 'De|';}
+    48%{content: 'Dev|';}
+    50%{content: 'Deve|';}
+    52%{content: 'Devel|';}
+    54%{content: 'Develo|';}
+    56%{content: 'Develop|';}
+    58%{content: 'Develope|';}
+    60%{content: 'Develop|';}
+    62%{content: 'Develo|';}
+    64%{content: 'Devel|';}
+    66%{content: 'Deve|';}
+    68%{content: 'Dev|';}
+    70%{content: 'De|';}
+    72%{content: 'D|';}
+    73%{content: 'De|';}
+    74%{content: 'Des|';}
+    76%{content: 'Desi';}
+    78%{content: 'Desig|';}
+    78%{content: 'Design';}
+    80%{content: 'Designe|';}
+    82%{content: 'Designer|';}
+    84%{content: 'Designe|';}
+    88%{content: 'Design|';}
+    90%{content: 'Desig|';}
+    92%{content: 'Desi|';}
+    94%{content: 'Des|';}
+    96%{content: 'De|';}
+    98%{content: 'D|';}
+    100%{content: '|';}
+}
+
+.social-icon a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+/*------------------  A B O U T   S E C T I O N  -------------------------*/
+
+
+
+.about{
+    padding: 100px 0 70px;
+}
+/* .photo-container{
+    background:url(.../img/dots.png)
+}
+.photo-container img{
+    position:absolute;
+    top:5px;
+    right:5px;
+} 
+.photo-container{
+    background-image:url(../img/dots.png);
+}
+.photo-container img{
+    position: relative;
+    bottom:30px;
+    left: 30px;
+}
+*/
+.photo-container{
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    z-index: 0;
+}
+
+.photo-container::after{
+    content: '';
+    background-image: url(../img/dots.png);
+    width: 85%;
+    height: 80%;
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    z-index: -1;
+}
+
+.about h3{
+    font-size: 30px;
+    font-weight:800;
+}
+
+.about p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight:400;    
+    line-height: 1.6;
+    color: #748182;
+    margin-bottom: 30px;
+}
+
+.text h6{
+    font-size: 13px;
+    font-weight:500;
+}
+
+.text span{
+    font-size: 10px;
+    font-weight:500;
+}
+
+.progress-bar{
+    background-color:var(--main-color)
+}
+
+.btn-dark{
+    --bs-btn-hover-bg: #ffffff;
+    --bs-btn-hover-color: var(--main-color);
+}
+.button{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    --bs-btn-font-family: 'Poppins', sans-serif;
+}
+
+.button-fill{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 11px 20px;
+}
+
+.btn-outline-dark{
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--main-color);
+}
+
+
+
+
+/*------------------  S E R V I C E S   S E C T I O N  -------------------------*/
+
+
+
+.services{
+    padding: 100px 0 70px;
+    background-color: var(--secondry-color);
+}
+.title{
+    margin-bottom:80px;
+}
+.card-content{
+    background-color:white;
+    padding:50px 20px !important;
+    border-radius:5px;
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+}
+.card-content p{
+    font-family: 'Poppins', sans-serif;;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 1.6;
+    color:#74838E;
+}
+.card-body h5{
+    font-size: 18px;
+    font-weight:800;
+    margin-bottom: 15px;
+}
+.icon{
+    width:5rem;
+    height:5rem;
+    border-radius:50%;
+    margin-bottom: 20px;
+    background-color:var(--secondry-color);
+    transition: all 0.5s;
+}
+.icon i{
+    transition: all 0.5s;
+}
+
+.card-content:hover .icon{
+    background-color:var(--main-color);
+}
+.card-content:hover .icon i{
+    color:white;
+}
+
+
+
+/*------------------  P O R T F O L I O   S E C T I O N  -------------------------*/
+
+
+
+
+.portfolio{
+    padding: 100px 0 70px;
+}
+
+
+.nav-pills .nav-link.active  {
+    color: var(--main-color);
+    padding: 8px 0px;
+    background-color: transparent; 
+    position: relative;
+}
+.nav-pills .nav-link  {
+    padding: 8px 0px;
+    margin: 0px 16px;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:700;  
+    display: block;
+    color: var(--main-color);
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+.nav-pills .nav-link.active:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    top:35px;
+    transition: all .4s;
+}
+
+.item-content{
+    position:relative;
+}
+
+.items-caption{
+    position:absolute;
+    top: 5px;
+    bottom:0px;
+    right:5px;
+    left:5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity:0;
+    transition: all 0.5s;
+}
+.item-caption-text h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.icons{
+    width:2rem;
+    height:2rem;
+    border-radius:50%;
+    margin-bottom: 30px;
+    background-color:var(--main-color);
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.icons i{
+    color:white; 
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.item-content:hover .items-caption{
+    opacity:1;
+    bottom:5px;
+}
+.item-content:hover .item-caption-text h6{
+    margin-bottom: 10px;
+}
+
+.item-caption-icons .icons:hover .icons i{
+    color:var(--main-color);
+}
+
+.item-caption-icons .icons:hover .icons{
+    background-color:white;
+}
+
+
+
+
+/*------------------  T E S T I M O N I A L S   S E C T I O N  -------------------------*/
+
+.testimonials{
+    padding: 100px 0 80px;
+    background-color: var(--secondry-color);
+}
+
+.carousel-indicators{
+    position: relative;
+    top:20px;
+}
+.carousel-item p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #748182;
+    width: 60%;
+    margin: auto;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin-top: 50px;
+}
+
+.carousel-item h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 3px;
+}
+
+.carousel-item span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #869791;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px 7px;
+}
+
+
+
+
+/*------------------  C O U N T E R   S E C T I O N  -------------------------*/
+
+
+
+.counter{
+    padding: 100px 70px 80px;
+}
+
+.counter-content i{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.counter-content h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.counter-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #748182;
+    
+}
+
+
+
+/*------------------  B L O G   S E C T I O N  -------------------------*/
+
+
+
+.our-blog{
+    padding: 100px 0 70px;
+    background-color: var(--secondry-color);
+
+}
+.shadowing{
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+}
+.card-body h6 a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 10px
+}
+.card-body h4 a{
+    color: var(--main-color);;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px
+}
+.card-body span a{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main-color);
+    border-bottom: 2px solid #333;
+}
+.card img{
+    width: 100%;
+    transition: all .6s;
+}
+.card:hover img{
+    transform: scale(1.2);
+}
+
+
+
+
+/*------------------  C O N T A C T - U S    S E C T I O N  -------------------------*/
+
+
+
+
+.contact-us{
+    padding:90px 0px;
+}
+
+.contact-icon{
+    width:4rem;
+    height:4rem;
+    border-radius:50%;
+    margin-bottom: 20px;
+    background-color:var(--secondry-color);
+    transition: all 0.5s;
+}
+
+.contact-item{
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    margin-bottom: 50px;
+}
+
+.contact-item h6{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-item p{
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 14px;
+    color: #748182;
+}
+
+.contact-icon i{
+    font-size:25px;
+    transition: all 0.5s;
+}
+
+.contact-item:hover .contact-icon{
+    background-color:var(--main-color);
+}
+
+.contact-item:hover .contact-icon i{
+    color:#ffffff;
+}
+
+.controls input[type=email],[type=text], textarea{
+    margin-bottom: 15px;
+    background-color: var(--secondry-color) !important;
+    border: 0 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px !important; 
+}
+
+.controls input{
+    height: 40px;
+}
+
+textarea {
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+}
+
+footer{
+    background: var(--main-color);
+    padding: 30px;
+}
+
+footer p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    color: #748182;
+}
+
+.form .controls  button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    background-color:var(--main-color);
+    padding: 10px 40px;
+
+}
+
